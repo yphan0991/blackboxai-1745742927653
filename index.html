@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Furniture Sales & Project Introduction</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Header -->
+  <header class="flex justify-between items-center p-6 max-w-7xl mx-auto">
+    <div class="text-2xl font-bold tracking-wide cursor-pointer">FurniLux</div>
+    <nav class="space-x-8 text-gray-700 font-semibold hidden md:flex">
+      <a href="#products" class="hover:text-gray-900 transition">Products</a>
+      <a href="#project" class="hover:text-gray-900 transition">Our Project</a>
+      <a href="#contact" class="hover:text-gray-900 transition">Contact</a>
+    </nav>
+    <div class="md:hidden">
+      <button id="menu-btn" aria-label="Toggle menu" class="text-gray-700 focus:outline-none">
+        <i class="fas fa-bars fa-lg"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-gray-100 py-20 px-6 text-center max-w-4xl mx-auto">
+    <h1 class="text-5xl font-extrabold mb-6">Modern Furniture for Your Dream Home</h1>
+    <p class="text-lg mb-8 text-gray-700">Discover elegant, sustainable, and innovative furniture designed to elevate your living space.</p>
+    <a href="#products" class="inline-block bg-black text-white px-8 py-3 rounded-full font-semibold hover:bg-gray-800 transition">Shop Now</a>
+  </section>
+
+  <!-- Products Section -->
+  <section id="products" class="max-w-7xl mx-auto px-6 py-16">
+    <h2 class="text-4xl font-bold mb-12 text-center">Featured Products</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+      <div class="border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1567016549637-1a7a7a7a7a7a?auto=format&fit=crop&w=600&q=80" alt="Modern Chair" class="w-full h-64 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Modern Chair</h3>
+          <p class="text-gray-600 mb-4">Comfortable and stylish chair perfect for any room.</p>
+          <span class="font-bold text-lg">$199</span>
+        </div>
+      </div>
+      <div class="border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1578894388084-7a7a7a7a7a7a?auto=format&fit=crop&w=600&q=80" alt="Wooden Table" class="w-full h-64 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Wooden Table</h3>
+          <p class="text-gray-600 mb-4">Elegant handcrafted wooden dining table.</p>
+          <span class="font-bold text-lg">$499</span>
+        </div>
+      </div>
+      <div class="border rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition">
+        <img src="https://images.unsplash.com/photo-1582582494707-7a7a7a7a7a7a?auto=format&fit=crop&w=600&q=80" alt="Cozy Sofa" class="w-full h-64 object-cover" />
+        <div class="p-6">
+          <h3 class="text-xl font-semibold mb-2">Cozy Sofa</h3>
+          <p class="text-gray-600 mb-4">Soft and spacious sofa for ultimate relaxation.</p>
+          <span class="font-bold text-lg">$799</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Introduction Section -->
+  <section id="project" class="bg-gray-50 py-20 px-6 max-w-5xl mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8">Our Furniture Project</h2>
+    <p class="text-lg max-w-3xl mx-auto text-gray-700 mb-6">
+      At FurniLux, we are dedicated to creating furniture that blends modern design with sustainability. Our project focuses on using eco-friendly materials and innovative craftsmanship to bring you pieces that are not only beautiful but also kind to the environment.
+    </p>
+    <p class="text-lg max-w-3xl mx-auto text-gray-700">
+      Inspired by the sleek and minimalist aesthetics of Tesla, our furniture collection embodies simplicity, functionality, and elegance. Join us in transforming your living space with furniture that tells a story.
+    </p>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="bg-black text-white py-12 px-6 text-center">
+    <div class="max-w-4xl mx-auto">
+      <h3 class="text-2xl font-semibold mb-4">Contact Us</h3>
+      <p class="mb-6">Email: contact@furnilux.com | Phone: +1 234 567 890</p>
+      <div class="space-x-6 text-xl">
+        <a href="#" aria-label="Facebook" class="hover:text-gray-400"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Twitter" class="hover:text-gray-400"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="Instagram" class="hover:text-gray-400"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menu-btn');
+    const nav = document.querySelector('nav');
+    menuBtn.addEventListener('click', () => {
+      nav.classList.toggle('hidden');
+    });
+  </script>
+</body>
+</html>
